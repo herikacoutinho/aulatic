@@ -27,6 +27,7 @@
 
 <body id="page-top">
 
+  {% block menu %}
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -56,7 +57,10 @@
       </div>
     </div>
   </nav>
+  {% endblock %}
 
+
+  {% block header %}
   <!-- Header -->
   <header class="masthead">
     <div class="container">
@@ -67,8 +71,10 @@
       </div>
     </div>
   </header>
+  {% endblock %}
 
   <!-- Services -->
+    {% block servicos %}
   <section id="services">
     <div class="container">
       <div class="row">
@@ -105,7 +111,9 @@
       </div>
     </div>
   </section>
+  {% endblock %}
 
+  {% block portifolio %}
   <!-- Portfolio Grid -->
   <section class="bg-light" id="portfolio">
     <div class="container">
@@ -203,7 +211,9 @@
       </div>
     </div>
   </section>
+  {% endblock %}
 
+  {% block sobre %}
   <!-- About -->
   <section id="about">
     <div class="container">
@@ -284,7 +294,9 @@
       </div>
     </div>
   </section>
+  {% endblock %}
 
+  {% block team %}
   <!-- Team -->
   <section class="bg-light" id="team">
     <div class="container">
@@ -375,7 +387,9 @@
       </div>
     </div>
   </section>
+  {% endblock %}
 
+  {% block cliente %}
   <!-- Clients -->
   <section class="py-5">
     <div class="container">
@@ -403,7 +417,9 @@
       </div>
     </div>
   </section>
+  {% endblock %}
 
+  {% block contato %}
   <!-- Contact -->
   <section id="contact">
     <div class="container">
@@ -448,7 +464,9 @@
       </div>
     </div>
   </section>
+  {% endblock %}
 
+  {% block rodape %}
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -488,7 +506,8 @@
       </div>
     </div>
   </footer>
-
+  {% endblock %}
+  
   <!-- Portfolio Modals -->
 
   <!-- Modal 1 -->
