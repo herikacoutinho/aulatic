@@ -11,3 +11,9 @@ class PaginaInicialView(TemplateView):
 
 class SobreView(TemplateView):
     template_name = "sobre.html"
+
+class ContatoView(TemplateView):
+    template_name = "contato.html"
+
+class CadastroView(TemplateView):
+    template_name = "cadastro.html"
