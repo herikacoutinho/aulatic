@@ -1,42 +1,132 @@
 {% load static %}
 
-<!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Curriculo Vitae</title>
+<head>
+  <meta charset="utf-8">
+  <title>Curriculo Vitae</title>
 
-    <link rel="stylesheet" href="{%static 'Source/bootstrap/css/bootstrap.css' %}">
+  <!--  Importando o bootstrap 4 -->
+  <link rel="stylesheet" href="{% static 'Source/bootstrap/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style media="screen">
-        .bg-cinza-claro{
-          background-color: #CCCCCC;
-        }
-        .text-cinza-claro{
-          color: #CCCCCC;
-        }
-    </style>
-
-  </head>
-  <body>
-    <!--define o format odo site: inteiro ou centraliza -->
-    <div class="container shadow-sm mt-3">
-
-      <div class="row border bg-cinza-claro rounded">
-
-        <div class="col-lg-8">
-
-          <h3>Herika</h3>
+  <style>
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+    .text-purple{
+        color: #77418c;
+    }
+    .bg-purple{
+        background-color: #77418c;
+    }
+    .item{
+        width: 48px;
+        height: 48px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid bg-light p-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 pt-4">
+                    <h1>HERIKA</h1>
+                    <h1 class="font-weight-bold" >COUTINHO</h1>
+                </div>
+                <div class="col text-right" >
+                    <div>Rua Professor Geraldo Longo<i class="fa fa-home text-purple" aria-hidden="true"></i></div>
+                    <div>(44)9-9139-2642 <i class="fa fa-phone text-purple"></i></div>
+                    <div>herikacoutinho91@gmail.com<i class="fa fa-envelope text-purple"></i></div>
+                    <div>LinkedIn</a> <i class="fa fa-linkedin-square text-purple"></i></div>
+                    <div><a href="https://twitter.com/guiazsan">Twitter</a> <i class="fa fa-globe text-purple"></i></div>
+                </div>
+            </div>
         </div>
-
-        <div class="col-lg">
-          Lista
-        </div>
-
-      </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <div class="text-white rounded-circle bg-purple item"><i class="fa fa-bars py-3"></i></div>
+            </div>
+            <div class="col">
+                <h4 class="font-weight-bold py-2" >OBJETIVO</h4>
+                <p>Adquirir experiência na área e realizar um trabalho de qualidade para
+                    engrandecimento pessoal e da empresa.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="text-purple rounded-circle bg-purple item" style="-webkit-text-stroke: 1px white;"> <i class="fa fa-graduation-cap py-3"></i></div>
+            </div>
+            <div class="col">
+                <h4 class="font-weight-bold py-2">EDUCAÇÃO</h4>
+                <h6 class="font-weight-bold">TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS | IFPR</h6>
+                <h6>DE 2017 ATÉ 2019</h6>
+                <p>Cursando o Terceiro ano do curso superior de Técnico em Análise e
+                    Desenvolvimento de Sistema do IFPR Campus Paranavaí.</p>
+                <h6 class="font-weight-bold">INGLÊS BÁSICO | CCAA</h6>
+                <h6>DE 2014 ATÉ 2015</h6>
+                <p>Concluído o básico da língua inglesa</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="text-purple rounded-circle bg-purple item" style="-webkit-text-stroke: 1px white;"> <i class="fa fa-briefcase py-3"></i></div>
+            </div>
+            <div class="col">
+                <h4 class="font-weight-bold py-2" >EXPERIÊNCIA</h4>
+                <h6 class="font-weight-bold">OPERADOR DE CAIXA | KD O BEBÊ?</h6>
+                <h6>DE 2016 ATÉ 2018 </h6>
+                <p>Atendimento ao cliente no caixa;
+                   Atendimento telefone;
+                   Fechamento de venda;
+                   Recebimento de prestações;
+                   Conferência de mercadoria;
+                   Pagamento de Boletos.</p>
+                <h6 class="font-weight-bold">PROGRAMADOR JR | ÁPICE SISTEMAS</h6>
+                <h6>DE 2018 </h6>
+                <p>Desenvolvimento de sistemas desktop;
+                   Gerenciamento de banco de dados.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="text-purple rounded-circle bg-purple item" style="-webkit-text-stroke: 1px white;"> <i class="fa fa-wrench py-3"></i></div>
+            </div>
+            <div class="col">
+                <h4 class="font-weight-bold py-2" >HABILIDADES</h4>
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                        <li>Experiência com linguagens de programação (Java, Java, Lua, Pascal, C, C++, C# e Type).</li>
 
+                        <li>Experiêcia com liguagens de Banco de Dados(MySQL, PostgreSQL).</li>
 
+                        <li>Experiência com tecnologias Web(HTML, CSS, PrimeFaces, BootStrap, JSF, Angular).</li>
 
-  </body>
+                        <li>Experiência com programas de desenvolvimento de software (Postgre,SQL Power Architect,Netbeans, Eclipse, Delphi XE7, Lazarus, Visual Code).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="text-white rounded-circle bg-purple item"> <i class="fa fa-ellipsis-h py-3"></i></div>
+            </div>
+            <div class="col">
+                <h4 class="font-weight-bold py-2" >ATIVIDADES</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                   Praesent et leo arcu. Praesent luctus leo nec interdum scelerisque.
+                    Aenean efficitur sagittis ex, sed vulputate arcu tincidunt sed.
+                    Suspendisse faucibus risus sit amet est ullamcorper luctus.
+                    Quisque id purus tortor. Aliquam fermentum hendrerit lacus,
+                    a aliquam dui venenatis quis. Sed finibus neque leo, sit amet suscipit ligula viverra eu.
+                    Curabitur luctus sed tellus nec pharetra.</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

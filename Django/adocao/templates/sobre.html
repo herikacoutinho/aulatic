@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -43,10 +44,11 @@
         <a href="#">Register</a>
       </div>
       <ul class="main-menu">
-        <li><a href="{% url 'index' %}">INICIO</a></li>
-        <li><a href="{% url 'sobre' %}">SOBRE</a></li>
-        <li><a href="{% url 'cadastro' %}">CADASTRO</a></li>
-        <li><a href="{% url 'contato' %}">CONTATO</a></li>
+				<li><a href="{% url 'index' %}">INICIO</a></li>
+				<li><a href="{% url 'sobre' %}">SOBRE</a></li>
+				<li><a href="{% url 'cadastro' %}">CADASTRO</a></li>
+				<li><a href="{% url 'contato' %}">CONTATO</a></li>
+				<li><a href="{% url 'curriculo' %}">CURRICULO</a></li>
       </ul>
     </div>
   </header>
@@ -57,9 +59,9 @@
 	<!-- Page Top section -->
 	<section class="page-top-section set-bg" data-setbg="{% static 'img/page-top-bg.jpg' %}">
 		<div class="container">
-			<h2>About us</h2>
+			<h2>Sobre</h2>
 			<div class="site-breadcrumb">
-				<a href="home">Home</a> / <span>About us</span>
+				<a href="{% url 'index' %}">Inicio</a> / <span>About us</span>
 			</div>
 		</div>
 	</section>
