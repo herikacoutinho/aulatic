@@ -1,7 +1,5 @@
 {% load static %}
 
-
-<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +10,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png" />
-    <title>Sobre</title>
+    <title>About Us</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" />
     <link rel="stylesheet" href="{% static 'css/flaticon.css' %}" />
@@ -24,13 +22,26 @@
   </head>
 
   <body>
-
-
-  <body>
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
       <div class="main_menu">
-                
+        <div class="search_input" id="search_input_box">
+          <div class="container">
+            <form class="d-flex justify-content-between" method="" action="">
+              <input
+                type="text"
+                class="form-control"
+                id="search_input"
+                placeholder="Search Here"
+              />
+              <button type="submit" class="btn"></button>
+              <span
+                class="ti-close"
+                id="close_search"
+                title="Close Search"
+              ></span>
+            </form>
+          </div>
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -77,11 +88,8 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="course-details.html"
-                        >Course Details</a
+                        >Detalhes</a
                       >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="elements.html">Elements</a>
                     </li>
                   </ul>
                 </li>
@@ -113,9 +121,10 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div class="banner_content text-center">
-                <h2>SOBRE O PROJETO</h2>
+                <h2>SOBRE</h2>
                 <div class="page_link">
-
+                  <a href="{% url 'index' %}">Inicio</a>
+                  <a href="{% url 'contato' %}">Contato</a>
                 </div>
               </div>
             </div>
@@ -132,15 +141,15 @@
           <div class="col-lg-6">
             <div class="h_blog_img">
               <img class="img-fluid" src="{% static 'img/prof.jpg' %}" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="h_blog_text">
-              <div class="h_blog_text_inner left right">
-                <h2 class="text-justify">
-                  Este projeto tem como intuito a criação de um ambiente virtual
-                  para o ensino de Língua Portuguesa tendo como foco o ensino fundamental.
-                </h2>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="h_blog_text">
+                  <div class="h_blog_text_inner left right">
+                    <h2 class="text-justify">
+                      Este projeto tem como intuito a criação de um ambiente virtual
+                      para o ensino de Língua Portuguesa tendo como foco o ensino fundamental.
+
               </div>
             </div>
           </div>
@@ -155,11 +164,13 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3 text-white">Awesome Feature</h2>
+              <h2 class="mb-3 text-white">Diagrama vai aqui</h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+              colocar aqui o diagrama do site
               </p>
             </div>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -171,9 +182,9 @@
         <div class="row justify-content-center">
           <div class="col-lg-5">
             <div class="main_title">
-              <h2 class="mb-3">Client say about me</h2>
+              <h2 class="mb-3">Conteúdo Adicional</h2>
               <p>
-                Replenish man have thing gathering lights yielding shall you
+              conteúdos adicionais encontrados no site.
               </p>
             </div>
           </div>
@@ -184,9 +195,39 @@
             <div class="testi_item">
               <div class="row">
                 <div class="col-lg-4 col-md-6">
-                  <img src="{% static 'img/testimonials/t1.jpg' %}" alt="" />
+                  <img src="{% static 'img/poesia.jpg' %}" alt="" />
                 </div>
+                <div class="col-lg-8">
+                  <div class="testi_text">
+                    <h4>Poesia</h4>
+                    <p>
+                    composição em versos (livres e/ou providos de rima), ger. com associações harmoniosas de palavras,
+                    ritmos e imagens.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testi_item">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <img src="{% static 'img/fabula.png' %}" alt="" />
+                </div>
+                <div class="col-lg-8">
+                  <div class="testi_text">
+                    <h4>Fábula</h4>
+                    <p>
+                      A fábula é uma narrativa em prosa ou poema épico breve de caráter moralizante,
+                      protagonizado por animais, plantas ou até objetos inanimados.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+          </div>
+        </div>
+      </div>
     </div>
     <!--================ End Testimonial Area =================-->
 
@@ -194,90 +235,18 @@
     <footer class="footer-area section_gap">
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Top Products</h4>
-            <ul>
-              <li><a href="#">Managed Website</a></li>
-              <li><a href="#">Manage Reputation</a></li>
-              <li><a href="#">Power Tools</a></li>
-              <li><a href="#">Marketing Service</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Brand Assets</a></li>
-              <li><a href="#">Investor Relations</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Features</h4>
-            <ul>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Brand Assets</a></li>
-              <li><a href="#">Investor Relations</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2 col-md-6 single-footer-widget">
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#">Guides</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Experts</a></li>
-              <li><a href="#">Agencies</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 single-footer-widget">
-            <h4>Newsletter</h4>
-            <p>You can trust us. we only send promo offers,</p>
-            <div class="form-wrap" id="mc_embed_signup">
-              <form
-                target="_blank"
-                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                method="get"
-                class="form-inline"
-              >
-                <input
-                  class="form-control"
-                  name="EMAIL"
-                  placeholder="Your Email Address"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Your Email Address'"
-                  required=""
-                  type="email"
-                />
-                <button class="click-btn btn btn-default">
-                  <span>subscribe</span>
-                </button>
-                <div style="position: absolute; left: -5000px;">
-                  <input
-                    name="b_36c4fd991d266f23781ded980_aefe40901a"
-                    tabindex="-1"
-                    value=""
-                    type="text"
-                  />
-                </div>
+          <footer class="footer-area section_gap">
+            <div class="container">
+              <div class="row">
 
-                <div class="info"></div>
-              </form>
+
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by Herika Coutinho.
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="row footer-bottom d-flex justify-content-between">
-          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
-          <div class="col-lg-4 col-sm-12 footer-social">
-            <a href="#"><i class="ti-facebook"></i></a>
-            <a href="#"><i class="ti-twitter"></i></a>
-            <a href="#"><i class="ti-dribbble"></i></a>
-            <a href="#"><i class="ti-linkedin"></i></a>
-          </div>
+          </footer>
+
         </div>
       </div>
     </footer>
@@ -285,17 +254,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-		<script src="{% static 'js/popper.js' %}"></script>
-		<script src="{% static 'js/bootstrap.min.js' %}"></script>
-		<script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
-		<script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
-		<script src="{% static 'js/owl-carousel-thumb.min.js' %}"></script>
-		<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
-		<script src="{% static 'js/mail-script.js' %}"></script>
-		<!--gmaps Js-->
-		<script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE' %}"></script>
-		<script src="{% static 'js/gmaps.min.js' %}"></script>
-		<script src="{% static 'js/theme.js' %}"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/owl-carousel-thumb.min.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+    <!--gmaps Js-->
+    <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE' %}"></script>
+    <script src="{% static 'js/gmaps.min.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
   </body>
 </html>
