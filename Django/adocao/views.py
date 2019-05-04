@@ -20,3 +20,7 @@ class CadastroView(TemplateView):
 
 class CurriculoView(TemplateView):
     template_name = "curriculo.html"
+
+
+class CursosView(TemplateView):
+    template_name = "cursos.html"
