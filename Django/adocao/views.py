@@ -15,9 +15,6 @@ class SobreView(TemplateView):
 class ContatoView(TemplateView):
     template_name = "contato.html"
 
-class CadastroView(TemplateView):
-    template_name = "cadastro.html"
-
 class CurriculoView(TemplateView):
     template_name = "curriculo.html"
 
