@@ -32,8 +32,7 @@
                 type="text"
                 class="form-control"
                 id="search_input"
-                placeholder="Search Here"
-              />
+                placeholder="Search Here" />
               <button type="submit" class="btn"></button>
               <span
                 class="ti-close"
@@ -61,7 +60,10 @@
               <span class="icon-bar"></span>
             </button>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
               <ul class="nav navbar-nav menu_nav ml-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="{% url 'index' %}">Inicio</a>
@@ -69,22 +71,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'sobre' %}">Sobre</a>
                 </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Paginas</a >
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'cursos' %}">Cursos</a>
-                    </li>
 
-                  </ul>
-                </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'contato' %}">Contato</a>
@@ -138,12 +125,17 @@
               <div class="col-lg-6">
                 <div class="h_blog_text">
                   <div class="h_blog_text_inner left right">
-                    <h3 class="text-justify">
+                  <h5 style="text-align:justify;">
+                      A popularidade da Tecnologia da informação e comunicação aumenta a cada dia em todas as áreas de trabalho,
+                      e com a educação não poderia ser diferente. Com esses grandes avanços tecnológicos é possível ensinar e aprender
+                      em um ambiente on-line, no qual, as pessoas que sentem interesse por obter novos conhecimentos pode acessar a internet
+                      e se matricular em qualquer curso desejado e estudar utilizando um Ambiente Virtual de Aprendizagem (AVA), obtendo a mesma
+                      qualidade de um curso presencial ofertados pelas universidades de todo o mundo.</h5>
+                  <h5 style="text-align:justify;">
                       Este projeto tem como intuito a criação de um ambiente virtual
-                      para o ensino de Língua Portuguesa tendo como foco o ensino fundamental.
-                      O aluno poderá se matricular em cursos específicos, cada curso terá um professor
-                      responsável. O aluno poderá se inscrever em mais de um curso, os cursos poderão
-                      ter mais de uma turma, para que o número de alunos por turma não seja muito grande.</h3>
+                      para o ensino de Língua Portuguesa.O aluno poderá se matricular em cursos específicos,
+                      cada curso terá um professor responsável. O aluno poderá se inscrever em mais de um curso,
+                      os cursos poderão ter mais de uma turma, para que o número de alunos por turma não seja muito grande.</h5>
 
               </div>
             </div>
@@ -230,18 +222,71 @@
     <footer class="footer-area section_gap">
       <div class="container">
         <div class="row">
-          <footer class="footer-area section_gap">
-            <div class="container">
-              <div class="row">
+          <div class="col-lg-2 col-md-6 single-footer-widget">
+            <h4>Melhores cursos</h4>
+            <ul>
+              <li><a href="#">Redação</a></li>
+              <li><a href="#">Gramática aplicada</a></li>
+              <li><a href="#">Enem</a></li>
+              <li><a href="#">Revisão ortográfica</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 single-footer-widget">
+            <h4>Conteúdos</h4>
+            <ul>
+              <li><a href="#">Ensino fundamental</a></li>
+              <li><a href="#">Ensino médio</a></li>
+              <li><a href="#">Superior</a></li>
+
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 single-footer-widget">
 
 
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by Herika Coutinho.
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="form-wrap" id="mc_embed_signup">
+              <form
+                target="_blank"
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get"
+                class="form-inline"
+              >
+                <input
+                  class="form-control"
+                  name="EMAIL"
+                  placeholder="Seu e-mail aqui"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Seu e-mail aqui'"
+                  required=""
+                  type="email"
+                />
+                <button class="click-btn btn btn-default">
+                  <span>Inscreva-se</span>
+                </button>
+                <div style="position: absolute; left: -5000px;">
+                  <input
+                    name="b_36c4fd991d266f23781ded980_aefe40901a"
+                    tabindex="-1"
+                    value=""
+                    type="text"
+                  />
+                </div>
 
-              </div>
+                <div class="info"></div>
+              </form>
             </div>
-          </footer>
-
+          </div>
+        </div>
+        <div class="row footer-bottom d-flex justify-content-between">
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by Herika Coutinho.<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+          <div class="col-lg-4 col-sm-12 footer-social">
+            <a href="#"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-twitter"></i></a>
+            <a href="#"><i class="ti-dribbble"></i></a>
+            <a href="#"><i class="ti-linkedin"></i></a>
+          </div>
         </div>
       </div>
     </footer>

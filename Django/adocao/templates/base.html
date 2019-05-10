@@ -32,8 +32,7 @@
                 type="text"
                 class="form-control"
                 id="search_input"
-                placeholder="Search Here"
-              />
+                placeholder="Search Here" />
               <button type="submit" class="btn"></button>
               <span
                 class="ti-close"
@@ -72,23 +71,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'sobre' %}">Sobre</a>
                 </li>
-                <li class="nav-item submenu dropdown">
-                  <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    >Paginas</a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a class="nav-link" href="{% url 'cursos' %}">Cursos</a>
-                    </li>
-                    </li>
 
-                  </ul>
-                </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'contato' %}">Contato</a>
@@ -123,7 +106,7 @@
                   PORTUGUÊS
                 </h2>
                 <div>
-                  <a href="#" class="primary-btn2 mb-3 mb-sm-0">saiba mais</a>
+                  <a href="{% url 'sobre' %}" class="primary-btn2 mb-3 mb-sm-0">saiba mais</a>
                   <a href="{% url 'cursos' %}" class="primary-btn ml-sm-3 ml-0">veja os cursos</a>
                 </div>
               </div>
@@ -221,15 +204,7 @@
                   <p>
                     Aprenda os princípios de como escrever uma boa redação.
                   </p>
-                  <div class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
 
-                    <div class="mt-lg-0 mt-3">
-                      <span class="meta_info mr-4">
-                        <a href="#"> <i class="ti-user mr-2"></i>25 </a>
-                      </span>
-                      <span class="meta_info"><a href="#"> <i class="ti-heart mr-2"></i>35 </a></span>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -241,10 +216,27 @@
 
                   <span class="tag mb-4 d-inline-block">Escolher</span>
                   <h4 class="mb-3">
-                    <a href="course-details.html">Gramática</a>
+                    <a href="course-details.html">Gramática Aplicada</a>
                   </h4>
                   <p>
                       Aprenda as regras da Língua portuguesa.
+                  </p>
+
+
+                </div>
+              </div>
+              <div class="single_course">
+                <div class="course_head">
+                  <img class="img-fluid" src="{% static 'img/courses/c1.jpg' %}" alt="" />
+                </div>
+                  <div class="course_content">
+
+                  <span class="tag mb-4 d-inline-block">Escolher</span>
+                  <h4 class="mb-3">
+                    <a href="course-details.html">Revisão Ortográfica</a>
+                  </h4>
+                  <p>
+                      Aprenda como fazer revisão ortográfica de textos.
                   </p>
 
 
@@ -375,18 +367,71 @@
     <footer class="footer-area section_gap">
       <div class="container">
         <div class="row">
-          <footer class="footer-area section_gap">
-            <div class="container">
-              <div class="row">
+          <div class="col-lg-2 col-md-6 single-footer-widget">
+            <h4>Melhores cursos</h4>
+            <ul>
+              <li><a href="#">Redação</a></li>
+              <li><a href="#">Gramática aplicada</a></li>
+              <li><a href="#">Enem</a></li>
+              <li><a href="#">Revisão ortográfica</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 single-footer-widget">
+            <h4>Conteúdos</h4>
+            <ul>
+              <li><a href="#">Ensino fundamental</a></li>
+              <li><a href="#">Ensino médio</a></li>
+              <li><a href="#">Superior</a></li>
+
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 single-footer-widget">
 
 
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by Herika Coutinho.
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="form-wrap" id="mc_embed_signup">
+              <form
+                target="_blank"
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get"
+                class="form-inline"
+              >
+                <input
+                  class="form-control"
+                  name="EMAIL"
+                  placeholder="Seu e-mail aqui"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Seu e-mail aqui'"
+                  required=""
+                  type="email"
+                />
+                <button class="click-btn btn btn-default">
+                  <span>Inscreva-se</span>
+                </button>
+                <div style="position: absolute; left: -5000px;">
+                  <input
+                    name="b_36c4fd991d266f23781ded980_aefe40901a"
+                    tabindex="-1"
+                    value=""
+                    type="text"
+                  />
+                </div>
 
-              </div>
+                <div class="info"></div>
+              </form>
             </div>
-          </footer>
-
+          </div>
+        </div>
+        <div class="row footer-bottom d-flex justify-content-between">
+          <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | by Herika Coutinho.<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+          <div class="col-lg-4 col-sm-12 footer-social">
+            <a href="#"><i class="ti-facebook"></i></a>
+            <a href="#"><i class="ti-twitter"></i></a>
+            <a href="#"><i class="ti-dribbble"></i></a>
+            <a href="#"><i class="ti-linkedin"></i></a>
+          </div>
         </div>
       </div>
     </footer>
