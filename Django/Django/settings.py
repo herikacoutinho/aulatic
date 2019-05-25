@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'adocao.apps.AdocaoConfig', #ativando o módulo adocao
+    'crispy_forms', #usar bs4 no formulario
+
 ]
 
 MIDDLEWARE = [
@@ -50,6 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 ROOT_URLCONF = 'Django.urls'
 
 TEMPLATES = [
