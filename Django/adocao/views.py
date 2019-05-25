@@ -37,6 +37,7 @@ class EstadoCreate(CreateView):
 
         context['titulo'] = "Cadastro de novos Estados"
         context['botao'] = "Cadastrar"
+        context['classeBotap'] = "btn-primary"
         return context #devolve/envia o context p/ seu comportamento padrão
 
 class CidadeCreate(CreateView):
@@ -64,6 +65,7 @@ class EstadoUpdate(UpdateView):
 
         context['titulo'] = "Editar Estado"
         context['botao'] = "Editar"
+        context['classeBotap'] = "btn-sucess"
         return context
 
 class CidadeUpdate(UpdateView):
@@ -77,4 +79,30 @@ class CidadeUpdate(UpdateView):
 
         context['titulo'] = "Editar Cidade"
         context['botao'] = "Editar"
+        return context
+
+####################### EXCLUIR ######################
+class EstadoDelete(DeleteView):
+    model = Estado
+    template_name = "adocao/formulario.html" # html que será utilizado
+    success_url = reverse_lazy("index") # pra onde direcionar o usuario após inserir o registro
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(EstadoDelete, self).get_context_data(*args, **kwargs)
+
+        context['titulo'] = "Excluir Estado?"
+        context['botao'] = "Excluir"
+        
+        return context
+
+class CidadeDelete(DeleteView):
+    model = Cidade
+    template_name = "adocao/formulariocid.html" # html que será utilizado
+    success_url = reverse_lazy("index") # pra onde direcionar o usuario após inserir o registro
+
+    def get_context_data(self, *args, **kwargs):
+        context = super(CidadeDelete, self).get_context_data(*args, **kwargs)
+
+        context['titulo'] = "Excluir Cidade?"
+        context['botao'] = "Excluir"
         return context
