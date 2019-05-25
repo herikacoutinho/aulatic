@@ -1,0 +1,35 @@
+{% extends 'adocao/base.html' %}
+
+{% load static %}
+
+{% block startarea %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5">
+
+      <h3>Cadastro de XXX</h3>
+
+      <form method="post">
+
+        <!-- todo formulário tem q ter essa validação -->
+        {% csrf_token %}
+        <!-- gera o formulário -->
+        {{ form.as_p }}
+
+        <!-- cria botão p/ submeter o form e outro pra voltar -->
+        <button type="submit" class="btn btn-success">
+           Salvar
+        </button>
+
+        <a href="{% url 'index' %}" class="btn btn-secondary">
+          Voltar
+        </a>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
