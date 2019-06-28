@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from django.views.generic.list import ListView
 
 from .models import *
 from django.urls import reverse_lazy #chama as urls pelo nome
@@ -92,7 +93,7 @@ class EstadoDelete(DeleteView):
 
         context['titulo'] = "Excluir Estado?"
         context['botao'] = "Excluir"
-        
+
         return context
 
 class CidadeDelete(DeleteView):
@@ -106,3 +107,8 @@ class CidadeDelete(DeleteView):
         context['titulo'] = "Excluir Cidade?"
         context['botao'] = "Excluir"
         return context
+
+####################### LISTAR ######################
+class EstadoList(ListView):
+    model = Estado
+    template_name = "adocao/list_estado.html"
